@@ -13,12 +13,19 @@ body {
     background: #f5f5f5;
 }
 
-/* Header Styles */
+/* Header Styles with Profile Picture */
 header {
     text-align: center;
     padding: 2rem;
     background: #333;
     color: #fff;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
 }
 
 header h1 {
@@ -30,7 +37,7 @@ header p {
     font-size: 1.2rem;
 }
 
-/* Skills Section */
+/* Skills Section with Progress Bars */
 #skills {
     padding: 2rem;
     text-align: center;
@@ -43,23 +50,30 @@ header p {
 
 .skills-container {
     display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 1rem;
-}
-
-.skill {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.2rem;
-    color: #333;
+    gap: 1rem;
 }
 
-.skill i {
-    font-size: 3rem;
+.skill p {
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    color: #4a90e2;
+}
+
+.progress-bar {
+    width: 80%;
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 1.5rem;
+    background-color: #4a90e2;
+    text-align: center;
+    color: white;
+    line-height: 1.5rem;
+    font-size: 1rem;
 }
 
 /* Projects Section */
@@ -101,7 +115,7 @@ header p {
     margin-bottom: 0.5rem;
 }
 
-/* Social Media Section */
+/* Enhanced Social Media Section */
 #contact {
     text-align: center;
     padding: 2rem;
@@ -119,11 +133,23 @@ header p {
 }
 
 .social-icon {
-    font-size: 2rem;
+    font-size: 1.2rem;
     color: #333;
-    transition: color 0.3s ease;
+    background-color: #e0e0e0;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.social-icon i {
+    margin-right: 0.5rem;
 }
 
 .social-icon:hover {
-    color: #4a90e2;
+    background-color: #4a90e2;
+    color: #fff;
+    transform: scale(1.1);
 }
