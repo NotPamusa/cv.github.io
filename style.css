@@ -179,3 +179,27 @@ header p {
     color: #333;
     margin-bottom: 0.5rem;
 }
+
+/* CSS for positioning the social links sidebar */
+.side-nav {
+    position: fixed;
+    left: 0;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column; /* Stack icons vertically */
+    gap: 10px;
+    padding: 10px;
+}
+
+.side-nav .social-icon {
+    color: #333; /* Customize icon color */
+    font-size: 24px; /* Adjust icon size */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.side-nav .social-icon:hover {
+    color: #007bff; /* Hover color for icons */
+}
+
